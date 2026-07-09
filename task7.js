@@ -500,7 +500,7 @@ function fetchdata() {
     fetch("https://jsonplaceholder.typicode.com/users")
         .then(response => response.json())
         .then(data => {
-            console.log("10.Employee Data from API");
+            console.log("10.Employee Data from API:");
             data.forEach(user => console.log(user.name)); 
         });
 }
