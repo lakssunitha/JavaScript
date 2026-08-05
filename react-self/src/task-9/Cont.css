@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.app{
+    min-height: 100vh;
+    padding: 30px;
+    transition: 0.3s;
+}
+
+.light{
+    background: #f4f6f8;
+    color: #222;
+}
+
+.dark{
+    background: #222;
+    color: white;
+}
+
+.themeBtn{
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    margin: 20px 0;
+    cursor: pointer;
+    font-size: 16px;
+    background: #007bff;
+    color: white;
+}
+
+.card{
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    color: black;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.dark .card{
+    background: #333;
+    color: white;
+}
+
+.form{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+input, 
+select, 
+textarea{
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid gray;
+    outline: none;
+    width: 100%;
+    background-color: #fff;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+input[type="date"]{
+    background-color: #fff;
+    color: gray;
+}
+
+textarea{
+    grid-column: 1/-1;
+    resize: none;
+    height: 100px;
+    width: 100%;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+h3{
+    margin-top: 30px;
+    text-align: center;
+}
+
+p{
+    margin-top: 10px;
+}
+
+@media (max-width:600px) {
+    .form{
+        grid-template-columns: 1fr;
+    }
+}

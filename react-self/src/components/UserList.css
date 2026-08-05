@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #eef2f7;
+}
+
+.app {
+  width: 90%;
+  margin: auto;
+  padding: 40px 0;
+}
+
+.login-card {
+  max-width: 450px;
+  margin: auto;
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.login-card h2 {
+  color: #0d6efd;
+  margin-bottom: 15px;
+}
+
+.login-card p {
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.login-card button {
+  padding: 10px 25px;
+  border: none;
+  background: #0d6efd;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.login-card button:hover {
+  background: #0b5ed7;
+  transform: scale(1.05);
+}
+
+.users-section {
+  margin-top: 50px;
+}
+
+.users-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.user-card {
+  width: 280px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+.user-card:hover {
+  transform: translateY(-6px);
+}
+
+.user-card h3 {
+  color: #0d6efd;
+  margin-bottom: 12px;
+}
+
+.user-card p {
+  margin: 8px 0;
+}
+
+@media (max-width: 768px) {
+  .user-card {
+    width: 100%;
+  }
+}
